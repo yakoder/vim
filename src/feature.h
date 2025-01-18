@@ -265,6 +265,8 @@
 /*
  * +reltime		reltime() function
  */
+/* configure script keeps balking at --disable-FEAT_RELTIME (or any other form of that) so just killing it here*/
+/*
 #if defined(FEAT_NORMAL) \
 	&& defined(FEAT_EVAL) \
 	&& ((defined(HAVE_GETTIMEOFDAY) && defined(HAVE_SYS_TIME_H) \
@@ -272,13 +274,16 @@
 	    || defined(MSWIN))
 # define FEAT_RELTIME
 #endif
+*/
 
 /*
  * +timers		timer_start()
  */
+/*
 #if defined(FEAT_RELTIME) && (defined(UNIX) || defined(MSWIN) || defined(VMS))
 # define FEAT_TIMERS
 #endif
+*/
 
 /*
  *			Insert mode completion with 'completefunc'.
@@ -1064,10 +1069,12 @@
 # define HAS_MESSAGE_WINDOW
 #endif
 
+/*
 #if defined(FEAT_SYN_HL) && defined(FEAT_RELTIME)
 // Can limit syntax highlight time to 'redrawtime'.
 # define SYN_TIME_LIMIT 1
 #endif
+*/
 
 
 /*

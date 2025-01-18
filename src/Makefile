@@ -312,7 +312,7 @@ CClink = $(CC)
 #CONF_ARGS5 = --without-local-dir
 
 # Use this one if you distribute a modified version of Vim.
-#CONF_ARGS6 = --with-modified-by="John Doe"
+CONF_ARGS6 = --with-modified-by="Jon Warren"
 
 # GUI - For creating Vim with GUI (gvim) (B)
 # Uncomment this line when you don't want to get the GUI version, although you
@@ -353,7 +353,7 @@ CClink = $(CC)
 #CONF_OPT_GUI = --enable-gui=gtk2 --disable-gtktest
 #CONF_OPT_GUI = --enable-gui=gnome2
 #CONF_OPT_GUI = --enable-gui=gnome2 --disable-gtktest
-#CONF_OPT_GUI = --enable-gui=gtk3
+CONF_OPT_GUI = --enable-gui=gtk3
 #CONF_OPT_GUI = --enable-gui=gtk3 --disable-gtktest
 #CONF_OPT_GUI = --enable-gui=motif
 #CONF_OPT_GUI = --enable-gui=motif --with-motif-lib="-static -lXm -shared"
@@ -418,7 +418,7 @@ CClink = $(CC)
 # When you get an error for a missing "perl.exp" file, try creating an empty
 # one: "touch perl.exp".
 # This requires at least "normal" features, "tiny" doesn't work.
-#CONF_OPT_PERL = --enable-perlinterp
+CONF_OPT_PERL = --enable-perlinterp
 #CONF_OPT_PERL = --enable-perlinterp=dynamic
 
 # PYTHON
@@ -438,7 +438,7 @@ CClink = $(CC)
 #CONF_OPT_PYTHON = --enable-pythoninterp
 #CONF_OPT_PYTHON = --enable-pythoninterp --with-python-command=python2.7
 #CONF_OPT_PYTHON = --enable-pythoninterp=dynamic
-#CONF_OPT_PYTHON3 = --enable-python3interp
+CONF_OPT_PYTHON3 = --enable-python3interp
 #CONF_OPT_PYTHON3 = --enable-python3interp --with-python3-command=python3.6
 #CONF_OPT_PYTHON3 = --enable-python3interp=dynamic
 
@@ -462,7 +462,7 @@ CClink = $(CC)
 
 # CSCOPE
 # Uncomment this when you want to include the Cscope interface.
-#CONF_OPT_CSCOPE = --enable-cscope
+CONF_OPT_CSCOPE = --enable-cscope
 
 # NETBEANS - NetBeans interface. Only works with Motif, GTK, and gnome.
 # Motif version must have XPM libraries (see |netbeans-xpm|).
@@ -523,7 +523,7 @@ CClink = $(CC)
 # libcanberra - For sound support.  Default is on for huge features.
 # Uncomment one of the two to chose otherwise.
 # CONF_OPT_CANBERRA = --enable-canberra
-# CONF_OPT_CANBERRA = --disable-canberra
+CONF_OPT_CANBERRA = --disable-canberra
 
 # libsodium - For enhanced encryption.  Default is on.
 # Uncomment the next line to not use libsodium
@@ -534,10 +534,10 @@ CClink = $(CC)
 # The default is "huge" for most systems.
 #CONF_OPT_FEAT = --with-features=tiny
 #CONF_OPT_FEAT = --with-features=normal
-#CONF_OPT_FEAT = --with-features=huge
+CONF_OPT_FEAT = --with-features=huge
 
 # COMPILED BY - For including a specific e-mail address for ":version".
-#CONF_OPT_COMPBY = "--with-compiledby=John Doe <JohnDoe@yahoo.com>"
+CONF_OPT_COMPBY = "--with-compiledby=Jon Warren <jonwarren@live.com>"
 
 # X WINDOWS DISABLE - For creating a plain Vim without any X11 related fancies
 # (otherwise Vim configure will try to include xterm titlebar access)
